@@ -18,7 +18,7 @@
             <button @click="addTodo">aggiungi</button>
         </div>
         <div class="container">
-            <div class="item" v-for="(todo, i) in todos" :key="i">
+            <div class="item" :class="{ 'done': todo.done }" v-for="(todo, i) in todos" :key="i" @click="clickDone(i)">
                 {{ todo.text }} 
                 <div>
                     <i v-if="todo.done" class="fa-solid fa-check" ></i>

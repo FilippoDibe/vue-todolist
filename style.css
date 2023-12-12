@@ -41,3 +41,13 @@
     display: flex;
     justify-content: space-between;
 }
+.fa-check{
+    color:lime;
+}
+.fa-x{
+    color:red;
+}
+
+.done {
+    text-decoration: line-through;
+}

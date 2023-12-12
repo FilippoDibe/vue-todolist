@@ -50,11 +50,14 @@ createApp({
   },
   methods : {
     addTodo() {
-        this.todos.push({
+        this.todos.unshift({
           text: this.newTodo,
           done: false 
         });
         this.newTodo = '';
+      },
+      clickDone(i) {
+        this.todos[i].done = !this.todos[i].done;
       }
   }
 }).mount('#app')
