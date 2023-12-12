@@ -9,20 +9,32 @@
 </head>
 <body>
 
-    <div class="img-container">
-        <img src="logo copia.svg" alt="">
-    </div>
-    <div class="input-container">
-        <input type="text" placeholder="cose da fare">
-        <button>aggiungi</button>
-    </div>
-    <div class="container">
-        
+    <div id="app">
+        <div class="img-container">
+            <img src="logo copia.svg" alt="">
+        </div>
+        <div class="input-container">
+            <input type="text" v-model="newTodo" placeholder="cose da fare">
+            <button @click="addTodo">aggiungi</button>
+        </div>
+        <div class="container">
+            <div class="item" v-for="(todo, i) in todos" :key="i">
+                {{ todo.text }} 
+                <div>
+                    <i v-if="todo.done" class="fa-solid fa-check" ></i>
+                    <i v-if="!todo.done" class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="script.js"></script>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="script.js"></script>
+
+
+
 
 </body>
 </html>
