@@ -22,7 +22,7 @@
                 {{ todo.text }} 
                 <div>
                     <i v-if="todo.done" class="fa-solid fa-check" ></i>
-                    <i v-if="!todo.done" class="fa-solid fa-x"></i>
+                    <i @click="removeTodo()" v-if="!todo.done" class="fa-solid fa-x"></i>
                 </div>
             </div>
         </div>

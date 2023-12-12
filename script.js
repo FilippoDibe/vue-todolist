@@ -58,6 +58,9 @@ createApp({
       },
       clickDone(i) {
         this.todos[i].done = !this.todos[i].done;
+      },
+      removeTodo(index) {
+        this.todos.splice(index, 1);
       }
   }
 }).mount('#app')
