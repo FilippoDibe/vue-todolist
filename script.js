@@ -21,3 +21,18 @@
 // Qui sotto vi metto anche un esempio dell’array di oggetti che userete nella vostra App di ToDo.
 // Ricordatevi la differenza in quello che si ottiene ad associare un valore basico Vs. assegnare un valore complesso (oggetto/array) ad una variabile/proprietà, potrebbe salvarvi tempo :occhiolino: .
 // Buon lavoro e buon divertimento!
+
+const todos: [
+    {
+        text: 'Fare i compiti',
+        done: false
+    },
+    {
+        text: 'Fare la spesa',
+        done: true
+    },
+    {
+        text: 'Fare il bucato',
+        done: false
+    }
+]

@@ -22,3 +22,17 @@
 .input-container button{
     font-size: 20px;
 }
+
+.container{
+    width: 80%;
+    background-color: gainsboro;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.item{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid black ;
+}
