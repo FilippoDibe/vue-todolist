@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.img-container img{
+    height: 100px;
+}
+.input-container{
+    text-align: center;
+}
+.input-container input{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.input-container button{
+    font-size: 20px;
+}
